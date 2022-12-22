@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 class Visitor
@@ -8,14 +8,14 @@ class Visitor
 public:
 	Visitor()
 	{
-		balance = 1000 + rand() % (10000 - 1000 + 1); // Рандомится баланс посетителя
-		hunger = 5 + rand() % (10 - 5 + 1); // Переменная, отвечающая за голод. 
+		balance = 1000 + rand() % (10000 - 1000 + 1); // Р Р°РЅРґРѕРјРёС‚СЃСЏ Р±Р°Р»Р°РЅСЃ РїРѕСЃРµС‚РёС‚РµР»СЏ
+		hunger = 5 + rand() % (10 - 5 + 1); // РџРµСЂРµРјРµРЅРЅР°СЏ, РѕС‚РІРµС‡Р°СЋС‰Р°СЏ Р·Р° РіРѕР»РѕРґ. 
 	}
 
-	int getBalance() { return balance; } // Функции для получения значений
+	int getBalance() { return balance; } // Р¤СѓРЅРєС†РёРё РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№
 	int getHunger() { return hunger; }
 
-	int set(int value, int num) // Функция для изменения значений 1 - изменить баланс, 2 - голод
+	int set(int value, int num) // Р¤СѓРЅРєС†РёСЏ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№ 1 - РёР·РјРµРЅРёС‚СЊ Р±Р°Р»Р°РЅСЃ, 2 - РіРѕР»РѕРґ
 	{
 		if (value == 1) balance = num;
 		else if (value == 2) hunger = num;
