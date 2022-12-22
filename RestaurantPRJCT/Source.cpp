@@ -8,6 +8,7 @@ class Visitor
 public:
 	Visitor()
 	{
+		srand(time(0));
 		balance = 1000 + rand() % (10000 - 1000 + 1); // Рандомится баланс посетителя
 		hunger = 5 + rand() % (10 - 5 + 1); // Переменная, отвечающая за голод. 
 	}
