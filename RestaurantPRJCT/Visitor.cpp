@@ -13,8 +13,9 @@ Visitor::Visitor(int value)
 bool Visitor::eat(int unit_food) // is the visitor hungry?
 {
 	if (unit_food <= hunger) {
-		return true;
+		
 		hunger -= unit_food;
+		return true;
 	}
 	return false;
 }
