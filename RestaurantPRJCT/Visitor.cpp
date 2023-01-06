@@ -1,4 +1,4 @@
-#include "Visitor.h"
+﻿#include "Visitor.h"
 
 Visitor::Visitor(int value)
 {

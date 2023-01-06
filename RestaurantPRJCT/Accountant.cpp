@@ -1,4 +1,4 @@
-#include "Accountant.h"
+﻿#include "Accountant.h"
 
 bool Accountant::is_enough_money(int money, int price)
 {

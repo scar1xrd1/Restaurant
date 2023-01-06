@@ -1,4 +1,4 @@
-#include "Visitor.h"
+ï»¿#include "Visitor.h"
 #include "Accountant.h"
 
 int main()
@@ -13,7 +13,7 @@ int main()
 
 	while (true) // balance selection
 	{
-		cout << "Ââåäèòå öèôðó\n1. Ðàíäîìíûé áàëàíñ\n2. Ñâîé áàëàíñ\n--> ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†Ð¸Ñ„Ñ€Ñƒ\n1. Ð Ð°Ð½Ð´Ð¾Ð¼Ð½Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ\n2. Ð¡Ð²Ð¾Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ\n--> ";
 		cin >> userS;
 		system("cls");
 
@@ -21,11 +21,11 @@ int main()
 		else if (userS == "2")
 		{
 			while (true) {
-				cout << "Ââåäèòå êîëè÷åñòâî äåíåã --> ";
-				while (!(cin >> u) || (cin.peek() != '\n')) { cin.clear(); while (cin.get() != '\n'); cout << "\nÒîëüêî öèôðàìè!\n\n--> "; }
+				cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð´ÐµÐ½ÐµÐ³ --> ";
+				while (!(cin >> u) || (cin.peek() != '\n')) { cin.clear(); while (cin.get() != '\n'); cout << "\nÐ¢Ð¾Ð»ÑŒÐºÐ¾ Ñ†Ð¸Ñ„Ñ€Ð°Ð¼Ð¸!\n\n--> "; }
 				system("cls");
 				if (u > 0) break;
-				else cout << "\nÇà÷åì òîãäà ïðèøëè â ðåñòîðàí?\n\n--> ";
+				else cout << "\nÐ—Ð°Ñ‡ÐµÐ¼ Ñ‚Ð¾Ð³Ð´Ð° Ð¿Ñ€Ð¸ÑˆÐ»Ð¸ Ð² Ñ€ÐµÑÑ‚Ð¾Ñ€Ð°Ð½?\n\n--> ";
 			}
 			user.set(u);
 			break;
@@ -34,12 +34,12 @@ int main()
 
 	// TEST
 
-	cout << "ÁÀËÀÍÑ\t" << user.Balance() << endl;
-	cout << "ÖÅÍÀ\t" << 500 << endl;
+	cout << "Ð‘ÐÐ›ÐÐÐ¡\t" << user.Balance() << endl;
+	cout << "Ð¦Ð•ÐÐ\t" << 500 << endl;
 
-	cout << "ÄÅÍÅÃ\t";
-	if (check.is_enough_money(user.Balance(), 500)) cout << "ÕÂÀÒÀÅÒ\n";
-	else cout << " ÍÅ ÕÂÀÒÀÅÒ\n";
+	cout << "Ð”Ð•ÐÐ•Ð“\t";
+	if (check.is_enough_money(user.Balance(), 500)) cout << "Ð¥Ð’ÐÐ¢ÐÐ•Ð¢\n";
+	else cout << " ÐÐ• Ð¥Ð’ÐÐ¢ÐÐ•Ð¢\n";
 
 	// TEST
 }
