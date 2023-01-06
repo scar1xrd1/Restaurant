@@ -24,3 +24,8 @@ int Visitor::Balance() // get balance
 {
 	return balance;
 }
+
+void Visitor::set(int number)
+{
+	balance = number;
+}
