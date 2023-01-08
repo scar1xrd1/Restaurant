@@ -9,6 +9,7 @@ int main()
 	string userS;
 	int u = 0;
 
+	cout << "\nВы зашли в ресторан \"БАНДЕРА\"\n\n";
 
 	Visitor user(0);
 	Accountant check;
@@ -46,7 +47,7 @@ int main()
 
 	//// TEST
 
-	while (true)
+	while (true) // table selection
 	{
 		cout << "Выберите столик\n";
 		rest.show_table();
@@ -62,5 +63,29 @@ int main()
 		else cout << "\nНеверный выбор! Введите число от 1 до 7\n\n";
 	}
 
-	
+	while (true)
+	{
+		cout << "Ваш столик:\t" << rest.show_idTable()+1 << endl;
+		cout << "Ваши средства:\t" << user.Balance() << " грн\n1. Посмотреть меню\n2. Пойти к бармену\n3. Кушать\n4. Уйти\n--> ";
+		cin >> userS;
+		system("cls");
+
+		if (userS == "1")
+		{
+			rest.show_menu();
+		}
+		else if (userS == "2")
+		{
+			// barmen
+		}
+		else if (userS == "3")
+		{
+			// eat
+		}
+		else if (userS == "4")
+		{
+			cout << "\nС Вами было приятно иметь дело, ждём Вас снова!\n\n";
+			break;
+		}
+	}
 }

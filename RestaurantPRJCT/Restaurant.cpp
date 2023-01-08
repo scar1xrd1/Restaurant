@@ -31,6 +31,12 @@ void Restaurant::show_table()
 
 bool Restaurant::check_table(int id)
 {
+	user_table = id;
 	if (table[id] == 0) return true;
 	return false;
+}
+
+void Restaurant::show_menu()
+{
+    // needs to be completed
 }
