@@ -1,12 +1,19 @@
 ﻿#pragma once
 #include "Visitor.h"
 #include "Waiter.h"
+#include <Windows.h>
 
-class Restaraunt
+class Restaurant
 {
+	
 	string** menu_buffet;
-	string* table;
+	int table[7];
 
 public:
-	Restaurant(){}
+	Restaurant();
+
+	void generate_table();
+	void show_table();
+
+	bool check_table(int);
 };
