@@ -10,5 +10,6 @@ public:
 	Visitor(int);
 	bool eat(int);
 	int Balance();
+	int Hunger();
 	void set(int);
 };

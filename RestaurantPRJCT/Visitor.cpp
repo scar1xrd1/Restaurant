@@ -25,6 +25,11 @@ int Visitor::Balance() // get balance
 	return balance;
 }
 
+int Visitor::Hunger() // get hunger
+{
+	return hunger;
+}
+
 void Visitor::set(int number)
 {
 	balance = number;

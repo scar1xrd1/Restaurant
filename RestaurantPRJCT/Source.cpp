@@ -63,7 +63,7 @@ int main()
 		else cout << "\nНеверный выбор! Введите число от 1 до 7\n\n";
 	}
 
-	while (true)
+	while (true) // menu
 	{
 		cout << "Ваш столик:\t" << rest.show_idTable()+1 << endl;
 		cout << "Ваши средства:\t" << user.Balance() << " грн\n1. Посмотреть меню\n2. Пойти к бармену\n3. Кушать\n4. Уйти\n--> ";
@@ -72,7 +72,15 @@ int main()
 
 		if (userS == "1")
 		{
-			rest.show_menu();
+			while (true)
+			{
+				cout << "Выберите категорию\n";
+				rest.show_menu(0);
+				cin >> userS;
+				system("cls");
+
+				if (userS == "3") break;
+			}
 		}
 		else if (userS == "2")
 		{
@@ -80,7 +88,11 @@ int main()
 		}
 		else if (userS == "3")
 		{
-			// eat
+			if (!rest.is_empty()) // eat from table
+			{
+				cout << "Ваш голод:\t" << user.Hunger() << endl;
+			}
+			else cout << "\nВаш стол пуст!\n\n";
 		}
 		else if (userS == "4")
 		{
