@@ -135,7 +135,6 @@
   <ItemGroup>
     <ClInclude Include="Accountant.h" />
     <ClInclude Include="Restaurant.h" />
-    <ClInclude Include="Waiter.h" />
     <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

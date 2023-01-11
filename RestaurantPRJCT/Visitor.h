@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <iostream>
 using namespace std;
 
@@ -7,6 +7,7 @@ class Visitor
 	int balance, hunger;
 
 public:
+	Visitor();
 	Visitor(int);
 	bool eat(int);
 	int Balance();
